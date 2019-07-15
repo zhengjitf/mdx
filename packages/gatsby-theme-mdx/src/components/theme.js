@@ -64,6 +64,15 @@ export default {
         color: 'secondary'
       }
     },
+    blockquote: {
+      my: 4,
+      ml: [3, 4, 5],
+      py: 3,
+      pl: [3, 4, 4],
+      borderLeft: '8px solid',
+      fontSize: 4,
+      fontWeight: 500
+    },
     table: {
       width: '100%',
       my: 4,
@@ -110,6 +119,9 @@ export default {
     },
     ul: {
       pl: 3
+    },
+    img: {
+      maxWidth: '100%'
     }
   },
   prism: {
