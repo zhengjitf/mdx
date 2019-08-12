@@ -24,6 +24,10 @@ const MDXCreateElement = ({
     DEFAULTS[type] ||
     originalType
 
+  if (typeof Component === 'undefined') {
+    throw new Error(`Could not find a component in MDXCreateElement for ${mdxType}`)
+  }
+
   if (propComponents) {
     return React.createElement(Component, {...etc, components: propComponents})
   }
