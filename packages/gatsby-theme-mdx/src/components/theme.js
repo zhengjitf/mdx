@@ -1,9 +1,12 @@
 const heading = {
+  fontFamily: 'sans',
   a: {
     color: 'inherit',
     textDecoration: 'none'
   }
 }
+
+const fontSizes = [14, 16, 18, 20, 24, 28, 32, 48]
 
 const colors = {
   text: '#000',
@@ -29,15 +32,17 @@ const colors = {
 export default {
   colors,
   fonts: {
+    sans: 'system-ui, sans-serif',
     monospace: '"Roboto Mono", Menlo, monospace'
   },
+  fontSizes,
   mediaQueries: {
     big: '@media screen and (min-width: 40em)'
   },
   styles: {
     h1: {
       ...heading,
-      fontSize: [5, 6]
+      fontSize: [5, 6, 7]
     },
     h2: {
       ...heading,
@@ -58,6 +63,10 @@ export default {
     h6: {
       ...heading,
       fontSize: 1
+    },
+    p: {
+      fontFamily: 'sans',
+      fontSize: [1, 2, 2]
     },
     a: {
       color: 'primary',
