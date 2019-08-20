@@ -1,5 +1,6 @@
 const heading = {
   fontFamily: 'sans',
+  color: 'heading',
   a: {
     color: 'inherit',
     textDecoration: 'none'
@@ -9,12 +10,14 @@ const heading = {
 const fontSizes = [14, 16, 18, 20, 24, 28, 32, 48]
 
 const colors = {
-  text: '#000',
+  text: '#1f2631',
+  body: '#1f2631',
+  heading: '#000',
   background: '#fff',
-  primary: '#33e',
+  primary: '#ff9500',
   secondary: '#11a',
   gray: '#ccc',
-  lightgray: '#f6f6f6',
+  lightgray: '#f9fafc',
   yellow: '#ffc',
   muted: '#444',
   dark: {
@@ -65,6 +68,8 @@ export default {
       fontSize: 1
     },
     p: {
+      color: 'body',
+      lineHeight: 1.9,
       fontFamily: 'sans',
       fontSize: [1, 2, 2]
     },
