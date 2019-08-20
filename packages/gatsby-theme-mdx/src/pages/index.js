@@ -64,6 +64,7 @@ export default () => (
               <Styled.p
                 sx={{
                   fontSize: 3,
+                  pr: [0, 4, 5],
                   mb: 5
                 }}
               >
