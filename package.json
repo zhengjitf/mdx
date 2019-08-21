@@ -27,6 +27,8 @@
     "packages/*",
     "docs",
     "examples/gatsby",
+    "examples/gatsby-toc-component",
+    "examples/gatsby-toc-plugin",
     "examples/next",
     "examples/parcel",
     "examples/syntax-highlighting",
