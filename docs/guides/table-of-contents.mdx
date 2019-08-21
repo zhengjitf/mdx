@@ -1,7 +1,48 @@
-import Note from 'gatsby-theme-mdx/src/components/note'
-
 # Table of contents
 
-<Note>
-  This guide is a WIP
-</Note>
+Adding a table of contents is a great way to
+add more context and easier navigation for
+long documents. With MDX, you can add a table
+of contents as a component or remark plugin.
+
+A component-based implementation is ultimately
+more flexible since you can apply it at the
+document level or in a layout. This is useful
+for adding the table of contents to the right
+hand side of a document which you often see
+on documentation sites.
+
+The plugin-based approach isn't much more than
+installing a plugin and configuring it!
+
+## Plugin
+
+Install [`remark-toc`](https://github.com/remarkjs/remark-toc):
+
+```sh
+yarn add remark-toc
+```
+
+Then, configure it as a `remarkPlugin`:
+
+```js
+remarkPlugins: [require('remark-toc')]
+```
+
+Lastly, add a table of contents header:
+
+```md
+# Hello, world!
+
+## Table of contents
+
+<!-- This will be magically populated by remark-toc -->
+
+## Other
+
+## Headings...
+```
+
+## Component
+
+
