@@ -38,6 +38,7 @@ const Speaker = props => {
         flexDirection: 'column',
         width: ['100%', '50%', '24%'],
         ml: '1%',
+        my: 3,
         p: {
           fontSize: [1, 2]
         },
@@ -59,9 +60,10 @@ const Speaker = props => {
         h4: {
           mt: 3,
           mb: -2,
-          lineHeight: 1,
+          mr: 1,
+          lineHeight: 1.4,
           fontFamily: 'monospace',
-          fontSize: [1, 2],
+          fontSize: 1,
           color: 'muted'
         },
         img: {
