@@ -10,17 +10,15 @@
   "private": true,
   "workspaces": [
     "examples/*",
-    "packages/*"
+    "packages/*",
+    "www"
   ],
   "scripts": {
-    "build": "lerna run build --no-private --ignore gatsby-theme-mdx",
-    "clean": "lerna exec \"rimraf dist node_modules\" && gatsby clean",
-    "docs": "gatsby develop",
-    "docs-build": "gatsby build",
-    "docs-deploy": "now && now alias $(pbpaste) mdxjs.com && now alias $(pbpaste) www.mdxjs.com",
+    "build": "lerna run build --no-private",
+    "clean": "lerna exec \"rimraf dist node_modules\"",
+    "docs": "yarn workspace www build",
     "format": "yarn lint --fix",
     "lint": "eslint . --cache --ext js,jsx -f friendly",
-    "now-build": "yarn build && yarn docs-build",
     "postinstall": "yarn-deduplicate || exit 0",
     "prepublishOnly": "yarn build",
     "publish": "lerna publish --force-publish=\"*\"",
@@ -31,7 +29,6 @@
     "test-types": "lerna run test-types",
     "test": "yarn build && yarn lint && yarn test-coverage"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.0",
     "@babel/plugin-syntax-jsx": "^7.12.0",
@@ -47,8 +44,6 @@
     "eslint-plugin-mdx": "^1.8.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.0",
-    "gatsby": "^2.24.3",
-    "gatsby-plugin-mdx": "^1.2.27",
     "husky": "^4.3.0",
     "jest": "^26.6.0",
     "lerna": "^3.22.1",
