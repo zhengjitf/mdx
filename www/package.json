@@ -6,15 +6,15 @@
   "scripts": {
     "build": "toast incremental .",
     "clean": "rimraf .tmp public",
-    "postinstall": "breadbox --dest public/web_modules"
+    "postinstall": "./postinstall.js"
   },
   "dependencies": {
     "@mdx-js/preact": "^2.0.0-next.8",
-    "@sector/breadbox": "^0.0.4",
     "@toastdotdev/mdx": "0.0.6",
     "gray-matter": "^4.0.2",
     "react-helmet": "^6.1.0",
-    "toast": "^0.3.30"
+    "toast": "^0.3.30",
+    "esinstall": "0.2.0"
   },
   "engines": {
     "node": "14.x"
