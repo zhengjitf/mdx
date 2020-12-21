@@ -16,3 +16,4 @@ public
 .nyc_output/
 coverage/
 .yarn
+.tmp
