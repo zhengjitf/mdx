@@ -30,7 +30,7 @@ const styles = (
   />
 )
 
-const MDXConf = () => (
+const V2Beta = () => (
   <div
     css={css({
       bg: '#fcb42d',
@@ -47,10 +47,10 @@ const MDXConf = () => (
         display: 'flex',
         p: 3
       })}
-      to="/conf"
+      to="https://github.com/mdx-js/mdx/issues/1041"
     >
       <span aria-label="tada">🎉</span>
-      <span css={css({ml: 2})}>MDX Conf &mdash; August 24th, 2020</span>
+      <span css={css({ml: 2})}>MDX v2 is now in beta</span>
       <span css={css({ml: 'auto'})}>&rarr;</span>
     </Link>
   </div>
@@ -193,7 +193,7 @@ export default props => {
       <ThemeProvider theme={theme} components={components}>
         <SkipNavLink />
         {styles}
-        <MDXConf />
+        <V2Beta />
         <Root>
           <Overlay open={menuOpen} onClick={closeMenu} />
           <Header toggleMenu={toggleMenu} dark={dark} setDark={setDark} />
